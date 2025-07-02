@@ -9,6 +9,7 @@ menu = int(input(""))
 
 if menu == 1:
 	os.system("cls")
+	endereço = input("Digite o endereço do Imóvel: ")
 	numero_boleto = int(input("Digite o número do Boleto: "))
 	data_boleto = input("Digite a data do vencimento do boleto (XX/XX/XXX) :")
 elif menu == 2:
