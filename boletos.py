@@ -25,17 +25,15 @@ while contagem == "sim":
 		numero_boletos.append(busca_numero_boleto)
 		data_boletos.append(busca_data_boleto)
 
-		print(numero_boletos)
+		print("Boleto número {} cadastrado com sucesso!".format(numero_boletos))
 
 	elif menu == 2:
 		# os.system("cls")
-		print(numero_boletos)
 
 		busca = input("Digite o número do Boleto para consulta: ")
 		if busca in numero_boletos:
 			position = numero_boletos.index(busca)
 			print("Endereço é {}, o número do boleto é {} e a data de vencimento do boleto é {}".format(enderecos[position], numero_boletos[position], data_boletos[position]))
-			print (position)
 		else:
 			print("Boleto não cadastrado")
 	elif menu == 3:
@@ -44,3 +42,4 @@ while contagem == "sim":
 
 
 	contagem = input("Deseja fazer mais buscas ? ")
+	contagem = contagem.lower()
