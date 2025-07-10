@@ -1,14 +1,14 @@
 # Algoritmo para eu guardar boletos que são parcelados
 import os
 
-contagem = "sim"
+contagem = 1
 
 enderecos = []
 numero_boletos = []
 data_boletos = []
 
 
-while contagem == "sim":
+while contagem == 1:
 	print("O que deseja fazer: ")
 	print("1 - Adicionar Boleto")
 	print("2 - Consultar Boletos")
@@ -41,5 +41,4 @@ while contagem == "sim":
 		busca = input("Digite o número do Boleto para exclusão: ")
 
 
-	contagem = input("Deseja fazer mais buscas ? ")
-	contagem = contagem.lower()
+	contagem = int(input("Deseja fazer mais buscas ? \n1 - Sim \n2 - Não \n "))
